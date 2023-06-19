@@ -1,88 +1,86 @@
 *{
     margin: 0;
     padding: 0;
+    /* border: 1px solid black; */
 }
 body{
-    background-color:hsl(185, 75%, 39%);
     min-height: 100vh;
-    font-family: 'Kumbh Sans', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
+    background-color:hsl(185, 75%, 39%);
+    font-family: 'Kumbh Sans', sans-serif;
     overflow: hidden;
-    position: relative;
-}
-.des{
-    width:320px;
-    height: 160px;
-    border-radius: 16px 16px 0 0;
-    
-}
-.prpic{
-    position:absolute;
-    /* top:32%; */
-    top:31.5%;
-}
-.dpic{
-    border-radius: 100%;
-    border:4px solid white;
 }
 .card{
-    padding-left: 10px;
-    padding-right: 10px;
     width:300px;
-    height: 350px;
-    /* border: 1px solid black; */
+    height:350px;
     background-color: white;
+    background-image: url('images/bg-pattern-card.svg');
+    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
-    justify-content:space-around;
+    justify-content: space-around;
     align-items: center;
-    text-align: center;
     border-radius: 15px;
-    z-index:1;
+    z-index: 1;
 }
-.bottom{
-    margin:10px;
-    width: 300px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap:35px;
-    margin-top: 30px;
-    margin-right: 10px;
-    margin-bottom: 30px;
-}
-.name{
-    font-size: 1.125rem;
-    font-weight: 700;
-}
-.age{
-    font-size: 1.125rem;
-    color:hsl(0, 0%, 59%);
+.dpic{
+    width:85px;
+    margin-top:90px;
+    border-radius:100%;
+    border:4px solid white;
 }
 .gname{
-    margin-top: 70px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap:10px;
+    gap:5px;
+    margin-top:10px;
+}
+.name{
+    font-weight: 700;
+    color:hsl(229, 23%, 23%);
+}
+.age{
+    color:hsl(0, 0%, 59%);
 }
 .city{
-    font-size: 13px;
-    margin-top:10px;
-    margin-bottom: 10px;
-    color: hsl(0, 0%, 59%);
+    width: 300px;
+    height: 30px;
+    font-size: 12px;
+    color:hsl(0, 0%, 59%);
+    display: flex;
+    justify-content: center;
+}
+.bottom{
+    width:300px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+hr{
+    height:0px;
+    width:298px;
+    border-top:0 none;
+    background-color: hsl(0, 0%, 94%);
+}
+.first,.second,.third{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.second{
+    margin-right: 12px;
 }
 .num{
     font-weight: 700;
+    color:hsl(229, 23%, 23%);
+
 }
 .stats{
+    font-size: 12px;
     color:hsl(0, 0%, 59%);
-}
-.third{
-    margin-left: 13px;
 }
 .topIm,.bottomIm{
     position: absolute;
